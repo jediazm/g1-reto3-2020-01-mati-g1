@@ -1,7 +1,6 @@
 package co.edu.uniandes.tianguix.conciliator.controller;
 
 import co.edu.uniandes.tianguix.conciliator.model.MatchingEngineResponse;
-import co.edu.uniandes.tianguix.conciliator.repository.ResponsesRepository;
 import co.edu.uniandes.tianguix.conciliator.service.ConciliationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

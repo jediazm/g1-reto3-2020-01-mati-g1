@@ -42,10 +42,7 @@
     <!-- ........................................................................................................... -->
 
     <modules>
-        <module>conciliator</module>
-        <module>registry</module>
-        <module>commons</module>
-        <module>notification-filter</module>
+        <module>app</module>
     </modules>
 
     <!-- ........................................................................................................... -->

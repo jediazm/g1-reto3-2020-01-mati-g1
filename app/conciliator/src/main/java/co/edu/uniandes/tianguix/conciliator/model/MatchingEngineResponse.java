@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.With;
 
 import java.util.Collection;
-import java.util.stream.Collectors;
 
 /**
  * Model that represents the response returned by the Matching Engine,
