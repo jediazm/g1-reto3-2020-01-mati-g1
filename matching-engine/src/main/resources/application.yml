@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: matching-engine
+eureka:
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+    healthcheck:
+      enabled: true
+
+server:
+  port: 9003
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+togglz:
+  enabled: true # Enable Togglz for the application.
+  console:
+    enabled: true # Enable admin console.
+    path: /togglz-console # The path of the admin console when enabled.
+    feature-admin-authority: ROLE_ADMIN # The name of the authority that is allowed to access the admin console.
+    secured: false # Indicates if the admin console runs in secured mode. If false the application itself should take care of securing the admin console.
+    use-management-port: false # Indicates if the admin console runs on the management port. If no management port is configured it will run on the application port. If set to true the console path will also be prefixed with the management.context-path.
+  feature-enums: co.edu.uniandes.tianguix.engine.model.TianguixFeature
