@@ -24,7 +24,6 @@
         <module>commons</module>
         <module>notification-filter</module>
         <module>slack-notificator-plugin</module>
-        <module>app</module>
     </modules>
 
 </project>
