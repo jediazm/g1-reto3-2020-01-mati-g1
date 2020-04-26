@@ -42,11 +42,10 @@
     <!-- ........................................................................................................... -->
 
     <modules>
-        <module>matching-engine</module>
-        <module>orders-manager</module>
         <module>conciliator</module>
         <module>registry</module>
         <module>commons</module>
+        <module>notification-filter</module>
     </modules>
 
     <!-- ........................................................................................................... -->
