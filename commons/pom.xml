@@ -22,40 +22,4 @@
     <artifactId>commons</artifactId>
     <packaging>jar</packaging>
 
-    <!-- ........................................................................................................... -->
-    <!-- Module properties -->
-    <!-- ........................................................................................................... -->
-
-    <properties>
-        <pf4j.version>3.3.1</pf4j.version>
-    </properties>
-
-    <!-- ........................................................................................................... -->
-    <!-- Module dependencies -->
-    <!-- ........................................................................................................... -->
-
-    <dependencies>
-        <dependency>
-            <groupId>org.pf4j</groupId>
-            <artifactId>pf4j</artifactId>
-            <version>${pf4j.version}</version>
-        </dependency>
-    </dependencies>
-
-    <!-- ........................................................................................................... -->
-    <!-- Module repositories -->
-    <!-- ........................................................................................................... -->
-
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>
