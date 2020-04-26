@@ -42,12 +42,7 @@
     <!-- ........................................................................................................... -->
 
     <modules>
-        <module>matching-engine</module>
-        <module>orders-manager</module>
-        <module>conciliator</module>
-        <module>registry</module>
-        <module>commons</module>
-        <module>slack-notificator-plugin</module>
+        <module>app</module>
     </modules>
 
     <!-- ........................................................................................................... -->
