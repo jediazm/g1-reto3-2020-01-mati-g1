@@ -10,7 +10,7 @@
     <!-- ........................................................................................................... -->
 
     <parent>
-        <artifactId>tianguix</artifactId>
+        <artifactId>app</artifactId>
         <groupId>co.edu.uniandes</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
