@@ -1,6 +1,7 @@
 package co.edu.uniandes.tianguix.commons.plugin;
 
 import co.edu.uniandes.tianguix.commons.model.Notification;
+import org.pf4j.ExtensionPoint;
 
 /**
  * Definition of the Plugin contract that must be implemented for each plugin
@@ -10,7 +11,7 @@ import co.edu.uniandes.tianguix.commons.model.Notification;
  * @since 0.0.1
  */
 @FunctionalInterface
-public interface NotificationProviderPlugin {
+public interface NotificationProviderPlugin extends ExtensionPoint {
 
 	/**
 	 * Should receive a {@link Notification} instance and sent it to its recipients
