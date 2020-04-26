@@ -10,7 +10,7 @@
     <!-- ........................................................................................................... -->
 
     <parent>
-        <artifactId>tianguix</artifactId>
+        <artifactId>app</artifactId>
         <groupId>co.edu.uniandes</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -19,19 +19,14 @@
     <!-- Module metadata -->
     <!-- ........................................................................................................... -->
 
-    <artifactId>app</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>slack-notificator-plugin</artifactId>
 
-    <!-- ........................................................................................................... -->
-    <!-- Module sub-modules -->
-    <!-- ........................................................................................................... -->
-
-    <modules>
-        <module>conciliator</module>
-        <module>registry</module>
-        <module>commons</module>
-        <module>notification-filter</module>
-        <module>plugins</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <artifactId>commons</artifactId>
+            <groupId>co.edu.uniandes</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
