@@ -8,6 +8,7 @@
 		<module>conciliator</module>
 		<module>registry</module>
         <module>commons</module>
+        <module>slack-notificator-plugin</module>
     </modules>
 
 	<parent>
