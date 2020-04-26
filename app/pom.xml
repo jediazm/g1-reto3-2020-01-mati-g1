@@ -5,11 +5,19 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- ........................................................................................................... -->
+    <!-- Parent metadata -->
+    <!-- ........................................................................................................... -->
+
     <parent>
         <artifactId>tianguix</artifactId>
         <groupId>co.edu.uniandes</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <!-- ........................................................................................................... -->
+    <!-- Module metadata -->
+    <!-- ........................................................................................................... -->
 
     <artifactId>app</artifactId>
     <packaging>pom</packaging>
@@ -23,7 +31,6 @@
         <module>registry</module>
         <module>commons</module>
         <module>notification-filter</module>
-        <module>app</module>
     </modules>
 
 </project>
