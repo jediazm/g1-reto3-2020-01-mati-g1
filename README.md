@@ -1,4 +1,4 @@
-# Arquitectura de Software, Reto 2 (Disponibilidad)
+# Arquitectura de Software, Reto 3 (Flexibilidad e Interoperabilidad)
 
 Este repositorio contiene el código fuente del experimento realizado con el fin de comprobar 
 el punto crítico asociado a la arquitectura de software que se diseñó para el **Reto 2**, reto asociado
