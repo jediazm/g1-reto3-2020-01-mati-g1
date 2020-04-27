@@ -27,9 +27,8 @@
     <!-- ........................................................................................................... -->
 
     <modules>
-        <module>conciliator</module>
-        <module>registry</module>
         <module>commons</module>
+        <module>registry</module>
         <module>notification-filter</module>
         <module>slack-notificator-plugin</module>
     </modules>

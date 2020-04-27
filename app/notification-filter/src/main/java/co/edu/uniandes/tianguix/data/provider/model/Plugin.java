@@ -1,11 +1,9 @@
-package co.edu.uniandes.tianguix.conciliator.model;
+package co.edu.uniandes.tianguix.data.provider.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.With;
-
-import java.time.LocalDateTime;
 
 /**
  * @author <a href="mailto:d.bellonc@uniandes.edu.co"> Daniel Bellón </a>
@@ -14,11 +12,10 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FailureNotification {
+public class Plugin {
 
-	@With private String matchingEngineId;
-	@With private LocalDateTime localDateTime;
-	@With private String orderId;
-
+	@With private Integer id;
+	@With private String name;
+	@With private String path;
+	@With private String type;
 }
-

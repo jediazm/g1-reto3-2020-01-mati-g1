@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.With;
 
+import java.io.Serializable;
+
 /**
  * Model that defines the attributes for a Tianguix user
  *
@@ -14,7 +16,7 @@ import lombok.With;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User implements Serializable {
 
 	@With private String uuid;
 	@With private String name;
