@@ -1,5 +1,6 @@
 package co.edu.uniandes.tianguix.notificator.rest;
 
+import lombok.var;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -22,7 +23,7 @@ public class SlackClient {
 	// Attributes
 	// -----------------------------------------------------------------------------------------------------------------
 
-	private String slackUrl = "https://hooks.slack.com/services/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";
+	private String slackUrl = "https://hooks.slack.com/services/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";
 
 	// -----------------------------------------------------------------------------------------------------------------
 	// Methods

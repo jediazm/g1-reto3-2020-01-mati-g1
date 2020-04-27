@@ -5,6 +5,7 @@ import co.edu.uniandes.tianguix.commons.plugin.NotificationProviderPlugin;
 import co.edu.uniandes.tianguix.notificator.rest.SlackClient;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import lombok.var;
 import org.pf4j.Extension;
 import org.pf4j.Plugin;
 import org.pf4j.PluginWrapper;
@@ -31,14 +32,9 @@ public class SlackPlugin extends Plugin {
 	// -----------------------------------------------------------------------------------------------------------------
 
 	@Extension
-	public class SlackNotificationProvider implements NotificationProviderPlugin {
+	public static class SlackNotificationProvider implements NotificationProviderPlugin {
 
-		private SlackClient slackClient;
-
-		public SlackNotificationProvider() {
-
-			slackClient = new SlackClient();
-		}
+		private SlackClient slackClient = new SlackClient();
 
 		@Override
 		public void notify(Notification notification) {

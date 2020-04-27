@@ -31,7 +31,7 @@
     <!-- ........................................................................................................... -->
 
     <properties>
-        <java.version>13</java.version>
+        <java.version>8</java.version>
         <spring-boot-admin.version>2.2.1</spring-boot-admin.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <pf4j.version>3.3.1</pf4j.version>

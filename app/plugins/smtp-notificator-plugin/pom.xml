@@ -7,7 +7,7 @@
     <!-- Module Properties -->
     <!-- ........................................................................................................... -->
     <properties>
-        <plugin.id>slack-notificator-plugin</plugin.id>
+        <plugin.id>smtp-notificator-plugin</plugin.id>
         <plugin.class>co.edu.uniandes.tianguix.notificator.service.SMTPPlugin</plugin.class>
         <plugin.version>0.0.1</plugin.version>
         <plugin.provider>Grupo1</plugin.provider>

@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
@@ -40,15 +41,15 @@ public class PluginsController {
 
 		try {
 
-			var path = Paths.get(pluginsPath + name);
-			var pathSaved = Files.write(path, file.getBytes(), StandardOpenOption.CREATE);
-			var plugin = Plugin.builder()
+			Path path = Paths.get(pluginsPath + name);
+			Path pathSaved = Files.write(path, file.getBytes(), StandardOpenOption.CREATE);
+			Plugin plugin = Plugin.builder()
 							   .name(name)
 							   .path(pathSaved.toAbsolutePath().toString())
 							   .type(type)
 							   .build();
 
-			var pluginSaved = pluginRepository.save(plugin);
+			Plugin pluginSaved = pluginRepository.save(plugin);
 			return ResponseEntity.ok(pluginSaved);
 
 		} catch (IOException e) {
@@ -61,7 +62,7 @@ public class PluginsController {
 	@GetMapping()
 	public ResponseEntity<List<Plugin>> getAllPlugins(@RequestParam(required = false) String type) {
 
-		var plugins = Optional.ofNullable(type).map(pluginRepository::findByType).orElse(getAllPlugins());
+		List<Plugin> plugins = Optional.ofNullable(type).map(pluginRepository::findByType).orElse(getAllPlugins());
 		return ResponseEntity.ok(plugins);
 	}
 
