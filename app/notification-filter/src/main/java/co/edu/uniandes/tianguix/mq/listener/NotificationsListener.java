@@ -39,9 +39,19 @@ public class NotificationsListener {
 			log.info("plugins successful loaded");
 
 			var notificationProviders = pluginManager.getExtensions(NotificationProviderPlugin.class);
-			notificationProviders.forEach(plugin -> plugin.notify(notification));
+			notificationProviders.forEach(plugin -> sendNotificationThroughProvider(notification, plugin));
+
 		} else {
 			log.info("There is o notifications provider available");
+		}
+	}
+
+	private void sendNotificationThroughProvider(Notification notification, NotificationProviderPlugin provider) {
+
+		try {
+			provider.notify(notification);
+		} catch (Exception e) {
+			log.error("unable to send notification through provider", e);
 		}
 	}
 }
