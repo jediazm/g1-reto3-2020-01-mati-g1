@@ -20,6 +20,16 @@ public class SMTPPlugin extends Plugin {
         super(wrapper);
     }
 
+    @Override
+    public void start(){
+        log.info("SMTP Plugin Started");
+    }
+    @Override
+    public void stop(){
+        log.info("SMTP Plugin Stopped");
+    }
+
+
     @Extension
     public static class PluginImpl implements NotificationProviderPlugin {
         // -----------------------------------------------------------------------------------------------------------------
