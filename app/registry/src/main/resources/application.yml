@@ -20,11 +20,13 @@ spring:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:file:./data/plugins-db
+    url: jdbc:h2:file:./data/plugins-db;AUTO_SERVER=TRUE;
     driver-class-name: org.h2.Driver
     username: plugin
     password: plugin
   jpa:
+    hibernate:
+      ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
 
 plugins:
