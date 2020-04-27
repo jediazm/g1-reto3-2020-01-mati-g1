@@ -41,7 +41,7 @@ public class NotificationsListener {
 			var notificationProviders = pluginManager.getExtensions(NotificationProviderPlugin.class);
 			notificationProviders.forEach(plugin -> plugin.notify(notification));
 		} else {
-			log.info("No noptifcations provider available");
+			log.info("There is o notifications provider available");
 		}
 	}
 }
