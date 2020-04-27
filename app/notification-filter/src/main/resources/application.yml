@@ -4,3 +4,6 @@ spring:
     port: 5672
     username: tianguix
     password: tianguix
+
+registry:
+  url: localhost:9001
