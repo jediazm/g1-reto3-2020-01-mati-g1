@@ -1,4 +1,4 @@
-package co.edu.uniandes.tianguix.notificator.service;
+package co.edu.uniandes.tianguix.notificator;
 
 import co.edu.uniandes.tianguix.commons.model.Notification;
 import co.edu.uniandes.tianguix.commons.plugin.NotificationProviderPlugin;
@@ -12,9 +12,10 @@ import java.io.InputStreamReader;
 import java.util.stream.Collectors;
 
 @Slf4j
-@RequiredArgsConstructor
 @Extension
-public class NotificationServiceImpl implements NotificationProviderPlugin {
+@RequiredArgsConstructor
+public class Plugin implements NotificationProviderPlugin {
+
     // -----------------------------------------------------------------------------------------------------------------
     // Attributes
     // -----------------------------------------------------------------------------------------------------------------

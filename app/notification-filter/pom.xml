@@ -21,30 +21,40 @@
 
     <artifactId>notification-filter</artifactId>
 
+    <properties>
+        <jackson.version>2.9.6</jackson.version>
+    </properties>
+
     <!-- ........................................................................................................... -->
     <!-- Parent metadata -->
     <!-- ........................................................................................................... -->
 
     <dependencies>
+
+        <!-- rabbitmq -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
+
+        <!-- jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>[2.9.10.4,)</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.9.6</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.10.4</version>
+            <version>${jackson.version}</version>
         </dependency>
+
+        <!-- commons -->
         <dependency>
             <groupId>co.edu.uniandes</groupId>
             <artifactId>commons</artifactId>
