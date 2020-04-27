@@ -3,8 +3,5 @@
 .idea
 *.iml
 **/target/
-
-app/registry/data/plugins-db.mv.db
-data/plugins-db.mv.db
-
-/plugins-store
+**/data/
+plugins-store
