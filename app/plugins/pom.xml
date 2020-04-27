@@ -28,6 +28,7 @@
 
     <modules>
         <module>slack-notificator-plugin</module>
+        <module>smtp-notificator-plugin</module>
     </modules>
 
 </project>
