@@ -31,13 +31,13 @@ public class NotificationsListener {
 		log.info("Message received: '{}'", notification);
 		var plugins = pluginsProvider.getPlugins();
 		// var path = plugins.stream().findFirst().map(Plugin::getPath).orElse("");
-		var path = "/Users/daniel.bellon/Documents/MATI/g1-reto3-2020-01-mati-g1/./plugins-store/";
+		var path = "/Users/daniel.bellon/Documents/MATI/g1-reto3-2020-01-mati-g1/plugins-store/slack-notificator-plugin-0.0.1-SNAPSHOT.jar";
 
 		var pluginsRoot = Paths.get(path);
 
 		var pluginManager = new JarPluginManager();
 
-
+		pluginManager.loadPlugin(pluginsRoot);
 		pluginManager.startPlugins();
 
 		var notificationProviders = pluginManager.getExtensions(NotificationProviderPlugin.class);

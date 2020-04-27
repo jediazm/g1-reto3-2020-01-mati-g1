@@ -1,12 +1,9 @@
 package co.edu.uniandes.tianguix.notificator.rest;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
@@ -15,8 +12,11 @@ import java.util.Collections;
  * @author <a href="mailto:d.bellonc@uniandes.edu.co"> Daniel Bellón </a>
  * @since 0.0.1
  */
-@RequiredArgsConstructor
 public class SlackClient {
+
+	public SlackClient() {
+
+	}
 
 	// -----------------------------------------------------------------------------------------------------------------
 	// Attributes
