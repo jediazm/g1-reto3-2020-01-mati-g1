@@ -27,15 +27,21 @@ public class NotificationsListener {
 	public void onMessage(Notification notification) {
 
 		log.info("Message received: '{}'", notification);
+
 		var plugins = pluginsProvider.getPlugins();
 
-		var pluginManager = new JarPluginManager();
-		plugins.forEach(plugin -> pluginManager.loadPlugin(Paths.get(plugin.getPath())));
-		pluginManager.startPlugins();
+		if (!plugins.isEmpty()) {
 
-		log.info("plugins successful loaded");
+			var pluginManager = new JarPluginManager();
+			plugins.forEach(plugin -> pluginManager.loadPlugin(Paths.get(plugin.getPath())));
+			pluginManager.startPlugins();
 
-		var notificationProviders = pluginManager.getExtensions(NotificationProviderPlugin.class);
-		notificationProviders.forEach(plugin -> plugin.notify(notification));
+			log.info("plugins successful loaded");
+
+			var notificationProviders = pluginManager.getExtensions(NotificationProviderPlugin.class);
+			notificationProviders.forEach(plugin -> plugin.notify(notification));
+		} else {
+			log.info("No noptifcations provider available");
+		}
 	}
 }
